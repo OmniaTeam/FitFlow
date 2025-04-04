@@ -1,0 +1,61 @@
+{"time":"2025-01-10T15:27:42.975720249+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:27:56.77121185+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:34:59.688876591+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:35:01.014278521+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:35:02.062955213+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:35:03.173135985+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:44:44.272070919+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:44:49.950754137+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:44:51.006182494+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:44:51.987671362+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":35},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:50:41.465847784+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":32},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T15:52:16.071371882+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":32},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host","trace_id":"sjnfckskkdnksd"}
+{"time":"2025-01-10T16:03:08.392785816+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":32},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T16:08:38.356616101+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":32},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T16:12:56.761723741+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":32},"msg":"Error pinging database","error":"failed to connect to `user=password= database=sslmode=`:\n\thostname resolving error: lookup port=0: no such host\n\tlookup port=0: no such host"}
+{"time":"2025-01-10T16:13:28.626602005+03:00","level":"ERROR","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":32},"msg":"Error pinging database","error":"failed to connect to `user=your_username database=your_database`:\n\t127.0.0.1:5432 (localhost): dial error: dial tcp 127.0.0.1:5432: connect: connection refused\n\t[::1]:5432 (localhost): dial error: dial tcp [::1]:5432: connect: connection refused"}
+{"time":"2025-01-10T16:14:32.052391723+03:00","level":"INFO","source":{"function":"api-gateway/pkg/storage.PostgresConnect","file":"/home/vadim/GolandProjects/sso-omnia/pkg/storage/postgres.go","line":37},"msg":"Successfully connected to the database"}
+{"time":"2025-01-10T16:54:37.808653113+03:00","level":"ERROR","msg":"Error pinging database","error":"failed to connect to `user=gin database=gin`:\n\t127.0.0.1:6778 (localhost): dial error: dial tcp 127.0.0.1:6778: connect: connection refused\n\t[::1]:6778 (localhost): dial error: dial tcp [::1]:6778: connect: connection refused"}
+{"time":"2025-01-10T16:57:03.829664846+03:00","level":"ERROR","msg":"Error pinging database","error":"failed to connect to `user=gin database=gin`:\n\t127.0.0.1:6778 (localhost): dial error: dial tcp 127.0.0.1:6778: connect: connection refused\n\t[::1]:6778 (localhost): dial error: dial tcp [::1]:6778: connect: connection refused"}
+{"time":"2025-01-12T02:29:23.546062979+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T02:29:23.548341121+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T02:29:38.226233336+03:00","level":"INFO","msg":"Shutdown Server ..."}
+{"time":"2025-01-12T02:29:38.480214358+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T02:29:38.480444668+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T02:30:43.803341382+03:00","level":"INFO","msg":"Shutdown Server ..."}
+{"time":"2025-01-12T02:30:45.0163708+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T02:30:45.01671748+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T02:31:08.52862462+03:00","level":"INFO","msg":"Shutdown Server ..."}
+{"time":"2025-01-12T02:32:14.059288358+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T02:32:14.059627259+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T02:32:22.610350542+03:00","level":"INFO","msg":"Shutdown Server ..."}
+{"time":"2025-01-12T02:32:24.180410052+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T02:32:24.181014354+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T02:32:54.985978785+03:00","level":"INFO","msg":"Shutdown Server ..."}
+{"time":"2025-01-12T02:32:55.254157384+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T02:32:55.254430695+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T02:33:39.620242838+03:00","level":"INFO","msg":"Shutdown Server ..."}
+{"time":"2025-01-12T02:33:39.853724164+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T02:33:39.85401506+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T03:22:35.575257291+03:00","level":"INFO","msg":"Shutdown Server ..."}
+{"time":"2025-01-12T03:22:36.905777326+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T03:22:36.906030507+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T03:23:37.637033579+03:00","level":"INFO","msg":"Shutdown Server ..."}
+{"time":"2025-01-12T14:01:59.625686651+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T14:01:59.632433365+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T14:02:13.036089035+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T14:02:13.036478204+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T14:02:27.998423702+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T14:02:27.998703908+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T18:37:40.612432222+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T18:37:40.612669173+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T18:42:16.130002013+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T18:42:16.130321899+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T18:42:16.130912636+03:00","level":"INFO","msg":"Failed to start http server: \n listen tcp 0.0.0.0:8085: bind: address already in use"}
+{"time":"2025-01-12T18:42:27.429362827+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T18:42:27.429739748+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T18:42:27.4303693+03:00","level":"INFO","msg":"Failed to start http server: \n listen tcp 0.0.0.0:8085: bind: address already in use"}
+{"time":"2025-01-12T18:42:41.929808928+03:00","level":"INFO","msg":"Successfully connected to the database gin"}
+{"time":"2025-01-12T18:42:41.930130683+03:00","level":"INFO","msg":"Starting server on 0.0.0.0:8085"}
+{"time":"2025-01-12T18:42:52.838159946+03:00","level":"INFO","msg":"Healthy","trace_id":"7875c717-84c5-4f15-b83e-fabbf1fa3ce1","user_id":"53634"}
+{"time":"2025-01-12T18:42:52.838626422+03:00","level":"INFO","msg":"/api/health","status":200,"method":"GET","path":"/api/health","query":"","ip":"::1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36","latency":100,"user_id":"53634","trace_id":"7875c717-84c5-4f15-b83e-fabbf1fa3ce1"}
