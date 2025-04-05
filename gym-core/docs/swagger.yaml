@@ -1,0 +1,354 @@
+definitions:
+  models.Exercise:
+    properties:
+      description:
+        type: string
+      difficulty:
+        type: string
+      equipment:
+        type: string
+      id:
+        type: integer
+      muscles:
+        description: Связанные мышцы
+        items:
+          $ref: '#/definitions/models.Muscle'
+        type: array
+      name:
+        type: string
+      photo_urls:
+        items:
+          type: string
+        type: array
+      type:
+        type: string
+      video_url:
+        type: string
+    type: object
+  models.ExerciseSet:
+    properties:
+      completed_reps:
+        type: integer
+      completed_sets:
+        type: integer
+      completed_weight:
+        type: number
+      id:
+        type: integer
+      is_completed:
+        type: boolean
+      planned_reps:
+        type: integer
+      planned_sets:
+        type: integer
+      planned_weight:
+        type: number
+      set_number:
+        type: integer
+      workout_exercise_id:
+        type: integer
+    type: object
+  models.Muscle:
+    properties:
+      description:
+        type: string
+      id:
+        type: integer
+      muscles_involved:
+        description: Степень вовлеченности мышцы (NOT NULL в таблице exercise_muscle)
+        type: number
+      name:
+        type: string
+      photo:
+        type: string
+    type: object
+  models.Program:
+    properties:
+      description:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      user_id:
+        type: integer
+      workouts:
+        description: Связанные тренировки
+        items:
+          $ref: '#/definitions/models.Workout'
+        type: array
+    type: object
+  models.User:
+    properties:
+      birthday:
+        type: string
+      first_name:
+        type: string
+      food_prompt:
+        type: string
+      gender:
+        type: string
+      height:
+        type: number
+      id:
+        type: integer
+      last_name:
+        type: string
+      level:
+        type: string
+      placement:
+        type: string
+      purpose:
+        type: string
+      training_count:
+        type: integer
+      weight:
+        type: number
+    type: object
+  models.UserUpdateRequest:
+    properties:
+      birthday:
+        type: string
+      first_name:
+        type: string
+      food_prompt:
+        type: string
+      gender:
+        type: string
+      height:
+        type: number
+      last_name:
+        type: string
+      level:
+        type: string
+      placement:
+        type: string
+      purpose:
+        type: string
+      training_count:
+        type: integer
+      weight:
+        type: number
+    required:
+    - birthday
+    - first_name
+    - gender
+    - height
+    - last_name
+    - weight
+    type: object
+  models.Workout:
+    properties:
+      date_time:
+        type: string
+      description:
+        type: string
+      exercises:
+        description: Связанные упражнения
+        items:
+          $ref: '#/definitions/models.WorkoutExercise'
+        type: array
+      id:
+        type: integer
+      name:
+        type: string
+      notes:
+        type: string
+      program_id:
+        type: integer
+      status:
+        type: string
+    type: object
+  models.WorkoutExercise:
+    properties:
+      exercise:
+        allOf:
+        - $ref: '#/definitions/models.Exercise'
+        description: Данные об упражнении
+      exercise_id:
+        type: integer
+      id:
+        type: integer
+      order_number:
+        type: integer
+      sets:
+        description: Подходы для этого упражнения
+        items:
+          $ref: '#/definitions/models.ExerciseSet'
+        type: array
+      workout_id:
+        type: integer
+    type: object
+info:
+  contact: {}
+paths:
+  /exercises:
+    get:
+      consumes:
+      - application/json
+      description: Get all exercises with their related muscles
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Exercise'
+            type: array
+        "500":
+          description: Internal server error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Get all exercises
+      tags:
+      - exercises
+  /exercises/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Get exercise by ID with all related muscles
+      parameters:
+      - description: Exercise ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Exercise'
+        "400":
+          description: Bad request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Exercise not found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal server error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Get exercise by ID
+      tags:
+      - exercises
+  /programs/user:
+    get:
+      consumes:
+      - application/json
+      description: Get user program with all workouts, exercises and sets by user
+        ID from X-User-Id header
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Program'
+        "400":
+          description: Bad request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Program not found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal server error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Get user program
+      tags:
+      - programs
+  /users:
+    put:
+      consumes:
+      - application/json
+      description: Update user by ID from X-User-Id header
+      parameters:
+      - description: User data for update
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/models.UserUpdateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: User updated successfully
+          schema:
+            $ref: '#/definitions/models.User'
+        "400":
+          description: Invalid input
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: User not found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal server error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Update user from header
+      tags:
+      - users
+  /users/profile:
+    get:
+      consumes:
+      - application/json
+      description: Get user profile by ID from X-User-Id header
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.User'
+        "400":
+          description: Bad request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: User not found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal server error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Get user profile
+      tags:
+      - users
+swagger: "2.0"

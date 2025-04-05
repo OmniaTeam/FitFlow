@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+yandex-cloud-ml-sdk = "*"
+create-fastapi-project = "*"
+poetry = "*"
+uvicorn = "*"
+fastapi = "*"
+asyncer = "*"
+pydantic = "*"
+pydantic-settings = "*"
+fastapi-pagination = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.3"
